@@ -8,7 +8,6 @@ import java.util.List;
 public class Category {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String name;
@@ -17,4 +16,15 @@ public class Category {
     private List<Product> products;
 
     // Getters and Setters
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public void setId(long id){
+        this.id = id;
+    }
+
+    public Long getId() {
+        return id;
+    }
 }
